@@ -1,1 +1,36 @@
-alvin
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <!-- Styling for a clean and user-friendly interface -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Container for the calculator interface -->
+  <div class="calculator">
+    <h2>Simple Calculator</h2>
+    <!-- Form to collect user inputs -->
+    <form id="calcForm">
+      <!-- Input for the first number -->
+      <input type="number" id="num1" placeholder="Enter first number" required>
+      <!-- Dropdown to select the operation -->
+      <select id="operation">
+        <option value="add">Addition (+)</option>
+        <option value="subtract">Subtraction (-)</option>
+        <option value="multiply">Multiplication (×)</option>
+        <option value="divide">Division (÷)</option>
+      </select>
+      <!-- Input for the second number -->
+      <input type="number" id="num2" placeholder="Enter second number" required>
+      <!-- Button to trigger calculation -->
+      <button type="submit">Calculate</button>
+    </form>
+    <!-- Div to display the result or error messages -->
+    <div id="result">Result:  </div>
+  </div>
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
